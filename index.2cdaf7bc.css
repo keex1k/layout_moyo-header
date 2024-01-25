@@ -1,0 +1,85 @@
+:root {
+  --color: #00acdc;
+}
+
+html {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+body {
+  margin: auto;
+}
+
+.header {
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  display: flex;
+  box-shadow: 0 2px 4px #0000000d;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.logo_image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav_item {
+  margin-left: 20px;
+  display: inline;
+}
+
+.nav_item:first-child {
+  margin-left: 0;
+}
+
+.nav_link {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  align-items: center;
+  height: 60px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 60px;
+  text-decoration: none;
+  transition: color .3s;
+  display: block;
+  position: relative;
+}
+
+.nav_link:hover, .nav_link.is-active, .is-active {
+  color: var(--color);
+}
+
+.nav_link.is-active:after {
+  content: "";
+  background-color: var(--color);
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
